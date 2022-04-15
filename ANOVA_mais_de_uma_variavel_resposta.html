@@ -241,6 +241,9 @@ acender</strong></li>
 
 data:  resd_tempAcender
 W = 0.95421, p-value = 0.3333</code></pre>
+<p>Valor de <em>p</em> igual a 0,3333 (<em>p</em> &gt; 0,05), logo, não
+significativo. Isto indica que os dados seguem distribuição normal
+(hipótese H<sub>0</sub> é verdadeira).</p>
 <ul>
 <li><strong>Teste de normalidade para o tempo de queima</strong></li>
 </ul>
@@ -250,6 +253,9 @@ W = 0.95421, p-value = 0.3333</code></pre>
 
 data:  resd_tempQueimando
 W = 0.9841, p-value = 0.9578</code></pre>
+<p>Valor de <em>p</em> igual a 0,9578 (<em>p</em> &gt; 0,05), logo, os
+dados seguem distribuição normal (hipótese H<sub>0</sub> é
+verdadeira).</p>
 <ul>
 <li><strong>Teste de normalidade para os poluentes
 emitidos</strong></li>
@@ -260,10 +266,13 @@ emitidos</strong></li>
 
 data:  resd_poluEmit
 W = 0.85707, p-value = 0.002966</code></pre>
-<p>Apesar do teste de normalidade ser significativo para o nível de
-poluentes emitidos, Baydili e Sirgile (2007) e Milliken e Johnson (1992)
-afirmam que a sensibilidade do teste F da ANOVA é mais afetada pela
-ausência de homogeneidade de variância das populações.</p>
+<p>Valor de <em>p</em> igual a 0,002966 (<em>p</em> ≤ 0,05), logo, o
+teste é significativo. Isto indica que os dados não seguem distribuição
+normal (hipótese H<sub>0</sub> é falsa). Apesar do teste de normalidade
+ser significativo para o nível de poluentes emitidos, Baydili e Sirgile
+(2007) e Milliken e Johnson (1992) afirmam que a sensibilidade do teste
+F da ANOVA é mais afetada pela ausência de homogeneidade de variância
+das populações.</p>
 </div>
 <div id="homogeneidade-de-variâncias-dos-resíduos" class="section level2" number="2.2">
 <h2><span class="header-section-number">2.2</span> Homogeneidade de
@@ -278,6 +287,8 @@ acender</strong></li>
 
 data:  resd_tempAcender by trat
 Bartlett&#39;s K-squared = 0.47845, df = 2, p-value = 0.7872</code></pre>
+<p>Valor <em>p</em> &gt; 0,05, logo, o teste é não signicativo (isto é,
+as variâncias amostrais são homogêneas).</p>
 <ul>
 <li><strong>Teste de homogeneidade de variâncias para tempo de
 queima</strong></li>
@@ -288,6 +299,8 @@ queima</strong></li>
 
 data:  resd_tempQueimando by trat
 Bartlett&#39;s K-squared = 0.0155, df = 2, p-value = 0.9923</code></pre>
+<p>Valor <em>p</em> &gt; 0,05, logo, as variâncias amostrais são
+homogêneas.</p>
 <ul>
 <li><strong>Teste de homogeneidade de variâncias para os poluentes
 emitidos</strong></li>
@@ -298,6 +311,7 @@ emitidos</strong></li>
 
 data:  resd_poluEmit by trat
 Bartlett&#39;s K-squared = 0.218, df = 2, p-value = 0.8967</code></pre>
+<p>Valor <em>p</em> &gt; 0,05, logo, o teste é não signicativo.</p>
 </div>
 <div id="os-erros-aleatórios-sejam-independentes" class="section level2" number="2.3">
 <h2><span class="header-section-number">2.3</span> Os erros aleatórios
@@ -320,6 +334,9 @@ trat         2  49.75  24.875   10.29 0.000766 ***
 Residuals   21  50.75   2.417                     
 ---
 Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
+<p>Valor de <em>p</em> igual a 0,000766 (<em>p</em> ≤ 0,05), logo, o
+teste é significativo. Isto indica que pelo menos uma das médias dos
+tratamentos difere das demais.</p>
 <div class="sourceCode" id="cb21"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="co">#str(Saida_DIC_TempAc)</span></span>
 <span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(Saida_DIC_TempAc[[<span class="dv">1</span>]])</span></code></pre></div>
 <pre><code>Classes &#39;anova&#39; and &#39;data.frame&#39;:   2 obs. of  5 variables:
@@ -354,6 +371,9 @@ trat         2  3.326  1.6629   26.31 1.91e-06 ***
 Residuals   21  1.327  0.0632                     
 ---
 Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
+<p>Valor de <em>p</em> igual a 1,91e-06 (<em>p</em> ≤ 0,05), logo, o
+teste indica que pelo menos uma das médias amostrais difere das
+demais.</p>
 <div class="sourceCode" id="cb27"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="co">#str(Saida_DIC_TempQ)</span></span>
 <span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(Saida_DIC_TempQ[[<span class="dv">1</span>]])</span></code></pre></div>
 <pre><code>Classes &#39;anova&#39; and &#39;data.frame&#39;:   2 obs. of  5 variables:
@@ -388,6 +408,8 @@ trat         2  10.37   5.187   14.92 9.29e-05 ***
 Residuals   21   7.30   0.348                     
 ---
 Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
+<p>Valor de <em>p</em> igual a 9,29e-05 (<em>p</em> ≤ 0,05), logo, o
+teste é significativo (pelo menos uma das médias difere das demais).</p>
 <div class="sourceCode" id="cb33"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a><span class="co">#str(Saida_DIC_PoluEmit)</span></span>
 <span id="cb33-2"><a href="#cb33-2" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(Saida_DIC_PoluEmit[[<span class="dv">1</span>]])</span></code></pre></div>
 <pre><code>Classes &#39;anova&#39; and &#39;data.frame&#39;:   2 obs. of  5 variables:
