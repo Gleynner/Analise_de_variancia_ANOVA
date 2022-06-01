@@ -36,7 +36,7 @@ realizar seu trabalho. Cada dado é referente a 5 kg de carvão.
 ![](dados_problema.png)
 
 1)  Faça as análises de de variâncias e estudo das médias.
-2)  Com os resultados das três caracter´sticas analisadas, tente
+2)  Com os resultados das três características analisadas, tente
     formular uma conclusão. <br>
 
 # 1 Dados do Problema
