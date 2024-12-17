@@ -6,4 +6,4 @@ Existe uma ferramenta chamada GitHub HTML Preview, que faz exatamente o que dese
 
 - Para **visualizar** o arquivo **"ANOVA_aplicacao_DIC_e_DBC.html"** basta **copiar e colar** o seguinte link em seu navegador ou clicar nele: http://htmlpreview.github.io/?https://github.com/Gleynner/Analise_de_variancia_ANOVA/blob/main/ANOVA_aplicacao_DIC_e_DBC.html
 
-- Para **visualizar** o arquivo **"ANOVA_mais_de_uma_variavel_resposta.html"** basta **copiar e colar** o seguinte link em seu navegador: http://htmlpreview.github.io/?https://github.com/Gleynner/Analise_de_variancia_ANOVA/blob/main/ANOVA_mais_de_uma_variavel_resposta.html
+- Para **visualizar** o arquivo **"ANOVA_mais_de_uma_variavel_resposta.html"** basta **copiar e colar** o seguinte link em seu navegador ou clicar nele: http://htmlpreview.github.io/?https://github.com/Gleynner/Analise_de_variancia_ANOVA/blob/main/ANOVA_mais_de_uma_variavel_resposta.html
